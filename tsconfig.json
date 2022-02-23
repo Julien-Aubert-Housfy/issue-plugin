@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "baseUrl": "resources",
+      "moduleResolution": "node",
+      "removeComments": true,
+      "allowJs": true,
+      "sourceMap": true,
+      "noImplicitAny": false,
+      "allowSyntheticDefaultImports": true,
+      "paths": {
+        "components/*": ["assets/ts/components/*"],
+        "mixins/*": ["assets/ts/mixins/*"],
+        "libraries/*": ["assets/ts/libraries/*"],
+        "api/*": ["assets/ts/api/*"],
+        "@/*": ["assets/ts/*"]
+      },
+      "lib": ["es2017", "dom"]
+    },
+    "include": ["resources/assets/ts/**/*.ts"],
+    "exclude": ["node_modules", "vendor", "public", "webpack.mix.js"]
+  }
+  
